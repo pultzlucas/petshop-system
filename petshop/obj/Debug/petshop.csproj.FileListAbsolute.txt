@@ -1,0 +1,15 @@
+C:\Lucas\School\Ds\projects\petshop\petshop\bin\Debug\petshop.exe.config
+C:\Lucas\School\Ds\projects\petshop\petshop\bin\Debug\petshop.exe
+C:\Lucas\School\Ds\projects\petshop\petshop\bin\Debug\petshop.pdb
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.csproj.AssemblyReference.cache
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.Form1.resources
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.frmlogin.resources
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.Properties.Resources.resources
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.csproj.GenerateResource.cache
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.csproj.CoreCompileInputs.cache
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.exe
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.pdb
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.frmmenu.resources
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.cad_clientes.resources
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.cad_produtos.resources
+C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.cad_animais.resources
