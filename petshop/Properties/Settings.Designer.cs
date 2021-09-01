@@ -22,5 +22,16 @@ namespace petshop.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\aluno\\Desktop\\petshop-cshar" +
+            "p-.net-framework\\petshop.mdb")]
+        public string petshopConnectionString {
+            get {
+                return ((string)(this["petshopConnectionString"]));
+            }
+        }
     }
 }
