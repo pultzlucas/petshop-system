@@ -19,7 +19,7 @@ namespace petshop
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            if(txtusu.Text == "admim" && txtsenha.Text == "123")
+            if(txtusu.Text == "admin" && txtsenha.Text == "123")
             {
                 frmmenu frm = new frmmenu();
                 frm.Show();

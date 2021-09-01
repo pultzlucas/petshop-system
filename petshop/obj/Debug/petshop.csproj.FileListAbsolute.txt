@@ -13,3 +13,17 @@ C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.frmmenu.resources
 C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.cad_clientes.resources
 C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.cad_produtos.resources
 C:\Lucas\School\Ds\projects\petshop\petshop\obj\Debug\petshop.cad_animais.resources
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\bin\Debug\petshop.exe.config
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.exe
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.pdb
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\bin\Debug\petshop.exe
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\bin\Debug\petshop.pdb
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.cad_animais.resources
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.cad_clientes.resources
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.cad_produtos.resources
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.Form1.resources
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.frmlogin.resources
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.frmmenu.resources
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.Properties.Resources.resources
+C:\Users\aluno\Desktop\petshop-csharp-.net-framework\petshop\obj\Debug\petshop.csproj.GenerateResource.Cache
