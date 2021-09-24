@@ -56,15 +56,15 @@ namespace petshop
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -155,12 +155,14 @@ namespace petshop
             this.códigoToolStripMenuItem.Name = "códigoToolStripMenuItem";
             this.códigoToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.códigoToolStripMenuItem.Text = "Código";
+            this.códigoToolStripMenuItem.Click += new System.EventHandler(this.códigoToolStripMenuItem_Click);
             // 
             // nomeToolStripMenuItem
             // 
             this.nomeToolStripMenuItem.Name = "nomeToolStripMenuItem";
             this.nomeToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.nomeToolStripMenuItem.Text = "Nome";
+            this.nomeToolStripMenuItem.Click += new System.EventHandler(this.nomeToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem1
             // 
@@ -176,12 +178,14 @@ namespace petshop
             this.códigoToolStripMenuItem1.Name = "códigoToolStripMenuItem1";
             this.códigoToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
             this.códigoToolStripMenuItem1.Text = "Código";
+            this.códigoToolStripMenuItem1.Click += new System.EventHandler(this.códigoToolStripMenuItem1_Click);
             // 
             // descriçãoToolStripMenuItem
             // 
             this.descriçãoToolStripMenuItem.Name = "descriçãoToolStripMenuItem";
             this.descriçãoToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.descriçãoToolStripMenuItem.Text = "Descrição";
+            this.descriçãoToolStripMenuItem.Click += new System.EventHandler(this.descriçãoToolStripMenuItem_Click);
             // 
             // animaisToolStripMenuItem1
             // 
@@ -197,12 +201,14 @@ namespace petshop
             this.códigoToolStripMenuItem2.Name = "códigoToolStripMenuItem2";
             this.códigoToolStripMenuItem2.Size = new System.Drawing.Size(113, 22);
             this.códigoToolStripMenuItem2.Text = "Código";
+            this.códigoToolStripMenuItem2.Click += new System.EventHandler(this.códigoToolStripMenuItem2_Click);
             // 
             // nomeToolStripMenuItem1
             // 
             this.nomeToolStripMenuItem1.Name = "nomeToolStripMenuItem1";
             this.nomeToolStripMenuItem1.Size = new System.Drawing.Size(113, 22);
             this.nomeToolStripMenuItem1.Text = "Nome";
+            this.nomeToolStripMenuItem1.Click += new System.EventHandler(this.nomeToolStripMenuItem1_Click);
             // 
             // utilitáriosToolStripMenuItem
             // 
@@ -238,8 +244,9 @@ namespace petshop
             // sobreSistemaToolStripMenuItem
             // 
             this.sobreSistemaToolStripMenuItem.Name = "sobreSistemaToolStripMenuItem";
-            this.sobreSistemaToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.sobreSistemaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sobreSistemaToolStripMenuItem.Text = "Sobre Sistema";
+            this.sobreSistemaToolStripMenuItem.Click += new System.EventHandler(this.sobreSistemaToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
@@ -252,6 +259,7 @@ namespace petshop
             this.toolStripButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.toolStrip1.Size = new System.Drawing.Size(533, 55);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
@@ -271,16 +279,6 @@ namespace petshop
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 55);
             // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(52, 52);
-            this.toolStripButton2.Text = "Cadastro de Animais";
-            // 
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -290,6 +288,21 @@ namespace petshop
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(52, 52);
             this.toolStripButton3.Text = "Cadastro de Produtos";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 55);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(52, 52);
+            this.toolStripButton2.Text = "Cadastro de Animais";
             // 
             // statusStrip1
             // 
@@ -339,11 +352,6 @@ namespace petshop
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 55);
             // 
             // frmmenu
             // 

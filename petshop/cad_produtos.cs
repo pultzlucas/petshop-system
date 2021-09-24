@@ -17,6 +17,34 @@ namespace petshop
             InitializeComponent();
         }
 
+        void habilitar()
+        {
+            codigoTextBox.Enabled = true;
+            descricaoTextBox.Enabled = true;
+            quantidadeTextBox.Enabled = true;
+            precoTextBox.Enabled = true;
+            forncedorTextBox.Enabled = true;
+
+            BtnNovo.Enabled = false;
+            BtnSalvar.Enabled = true;
+            BtnCancelar.Enabled = true;
+            BtnExcluir.Enabled = false;
+        }
+
+        void desabilitar()
+        {
+            codigoTextBox.Enabled = false;
+            descricaoTextBox.Enabled = false;
+            quantidadeTextBox.Enabled = true;
+            precoTextBox.Enabled = true;
+            forncedorTextBox.Enabled = true;
+
+            BtnNovo.Enabled = true;
+            BtnSalvar.Enabled = false;
+            BtnCancelar.Enabled = false;
+            BtnExcluir.Enabled = true;
+        }
+
         private void produtosBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -34,6 +62,7 @@ namespace petshop
 
         private void BtnNovo_Click(object sender, EventArgs e)
         {
+            habilitar();
             produtosBindingSource.AddNew();
         }
 
@@ -42,6 +71,7 @@ namespace petshop
             produtosBindingSource.EndEdit();
             produtosTableAdapter.Update(petshopDataSet.produtos);
             produtosTableAdapter.Fill(petshopDataSet.produtos);
+            desabilitar();
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)

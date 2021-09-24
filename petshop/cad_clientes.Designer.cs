@@ -153,6 +153,7 @@ namespace petshop
             this.clientesBindingNavigator.BindingSource = this.clientesBindingSource;
             this.clientesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.clientesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.clientesBindingNavigator.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.clientesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -172,8 +173,9 @@ namespace petshop
             this.clientesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.clientesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.clientesBindingNavigator.Name = "clientesBindingNavigator";
+            this.clientesBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.clientesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clientesBindingNavigator.Size = new System.Drawing.Size(779, 25);
+            this.clientesBindingNavigator.Size = new System.Drawing.Size(779, 31);
             this.clientesBindingNavigator.TabIndex = 0;
             this.clientesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -183,13 +185,13 @@ namespace petshop
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -199,7 +201,7 @@ namespace petshop
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -208,7 +210,7 @@ namespace petshop
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -217,13 +219,13 @@ namespace petshop
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -237,7 +239,7 @@ namespace petshop
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -245,7 +247,7 @@ namespace petshop
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -254,26 +256,27 @@ namespace petshop
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // clientesBindingNavigatorSaveItem
             // 
             this.clientesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.clientesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("clientesBindingNavigatorSaveItem.Image")));
             this.clientesBindingNavigatorSaveItem.Name = "clientesBindingNavigatorSaveItem";
-            this.clientesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.clientesBindingNavigatorSaveItem.Size = new System.Drawing.Size(28, 28);
             this.clientesBindingNavigatorSaveItem.Text = "Save Data";
             this.clientesBindingNavigatorSaveItem.Click += new System.EventHandler(this.clientesBindingNavigatorSaveItem_Click);
             // 
             // codigoTextBox
             // 
             this.codigoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "codigo", true));
+            this.codigoTextBox.Enabled = false;
             this.codigoTextBox.Location = new System.Drawing.Point(85, 45);
             this.codigoTextBox.Name = "codigoTextBox";
             this.codigoTextBox.Size = new System.Drawing.Size(657, 20);
@@ -282,6 +285,7 @@ namespace petshop
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "nome", true));
+            this.nomeTextBox.Enabled = false;
             this.nomeTextBox.Location = new System.Drawing.Point(85, 71);
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(657, 20);
@@ -290,6 +294,7 @@ namespace petshop
             // foneMaskedTextBox
             // 
             this.foneMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "fone", true));
+            this.foneMaskedTextBox.Enabled = false;
             this.foneMaskedTextBox.Location = new System.Drawing.Point(85, 97);
             this.foneMaskedTextBox.Mask = "(99)99999-9999";
             this.foneMaskedTextBox.Name = "foneMaskedTextBox";
@@ -299,6 +304,7 @@ namespace petshop
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "email", true));
+            this.emailTextBox.Enabled = false;
             this.emailTextBox.Location = new System.Drawing.Point(85, 123);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(657, 20);
@@ -307,6 +313,7 @@ namespace petshop
             // cpfMaskedTextBox
             // 
             this.cpfMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientesBindingSource, "cpf", true));
+            this.cpfMaskedTextBox.Enabled = false;
             this.cpfMaskedTextBox.Location = new System.Drawing.Point(85, 149);
             this.cpfMaskedTextBox.Mask = "999.999.999-99";
             this.cpfMaskedTextBox.Name = "cpfMaskedTextBox";
@@ -325,6 +332,7 @@ namespace petshop
             // 
             // BtnSalvar
             // 
+            this.BtnSalvar.Enabled = false;
             this.BtnSalvar.Location = new System.Drawing.Point(225, 210);
             this.BtnSalvar.Name = "BtnSalvar";
             this.BtnSalvar.Size = new System.Drawing.Size(127, 23);
@@ -345,6 +353,7 @@ namespace petshop
             // 
             // BtnCancelar
             // 
+            this.BtnCancelar.Enabled = false;
             this.BtnCancelar.Location = new System.Drawing.Point(406, 210);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(142, 23);
@@ -366,6 +375,7 @@ namespace petshop
             this.clientesDataGridView.DataSource = this.clientesBindingSource;
             this.clientesDataGridView.Location = new System.Drawing.Point(40, 262);
             this.clientesDataGridView.Name = "clientesDataGridView";
+            this.clientesDataGridView.RowHeadersWidth = 62;
             this.clientesDataGridView.Size = new System.Drawing.Size(702, 220);
             this.clientesDataGridView.TabIndex = 15;
             // 
@@ -373,31 +383,41 @@ namespace petshop
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "codigo";
             this.dataGridViewTextBoxColumn1.HeaderText = "codigo";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 150;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "nome";
             this.dataGridViewTextBoxColumn2.HeaderText = "nome";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 150;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "fone";
             this.dataGridViewTextBoxColumn3.HeaderText = "fone";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 150;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "email";
             this.dataGridViewTextBoxColumn4.HeaderText = "email";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 150;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "cpf";
             this.dataGridViewTextBoxColumn5.HeaderText = "cpf";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 150;
             // 
             // cad_clientes
             // 
@@ -420,7 +440,7 @@ namespace petshop
             this.Controls.Add(cpfLabel);
             this.Controls.Add(this.cpfMaskedTextBox);
             this.Controls.Add(this.clientesBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "cad_clientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Clientes";

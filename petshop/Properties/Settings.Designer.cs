@@ -26,8 +26,7 @@ namespace petshop.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\aluno\\Desktop\\petshop-cshar" +
-            "p-.net-framework\\petshop.mdb")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\School\\DS\\petshop\\db.mdb")]
         public string petshopConnectionString {
             get {
                 return ((string)(this["petshopConnectionString"]));

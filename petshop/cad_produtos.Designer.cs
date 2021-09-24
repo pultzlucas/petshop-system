@@ -30,28 +30,28 @@ namespace petshop
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cad_produtos));
             System.Windows.Forms.Label codigoLabel;
             System.Windows.Forms.Label descricaoLabel;
             System.Windows.Forms.Label quantidadeLabel;
             System.Windows.Forms.Label precoLabel;
             System.Windows.Forms.Label forncedorLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cad_produtos));
             this.petshopDataSet = new petshop.petshopDataSet();
             this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.produtosTableAdapter = new petshop.petshopDataSetTableAdapters.produtosTableAdapter();
             this.tableAdapterManager = new petshop.petshopDataSetTableAdapters.TableAdapterManager();
             this.produtosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.produtosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.codigoTextBox = new System.Windows.Forms.TextBox();
             this.descricaoTextBox = new System.Windows.Forms.TextBox();
@@ -79,6 +79,56 @@ namespace petshop
             this.produtosBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.produtosDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // codigoLabel
+            // 
+            codigoLabel.AutoSize = true;
+            codigoLabel.Location = new System.Drawing.Point(28, 38);
+            codigoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            codigoLabel.Name = "codigoLabel";
+            codigoLabel.Size = new System.Drawing.Size(60, 20);
+            codigoLabel.TabIndex = 1;
+            codigoLabel.Text = "codigo:";
+            // 
+            // descricaoLabel
+            // 
+            descricaoLabel.AutoSize = true;
+            descricaoLabel.Location = new System.Drawing.Point(28, 78);
+            descricaoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            descricaoLabel.Name = "descricaoLabel";
+            descricaoLabel.Size = new System.Drawing.Size(81, 20);
+            descricaoLabel.TabIndex = 3;
+            descricaoLabel.Text = "descricao:";
+            // 
+            // quantidadeLabel
+            // 
+            quantidadeLabel.AutoSize = true;
+            quantidadeLabel.Location = new System.Drawing.Point(28, 118);
+            quantidadeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            quantidadeLabel.Name = "quantidadeLabel";
+            quantidadeLabel.Size = new System.Drawing.Size(93, 20);
+            quantidadeLabel.TabIndex = 5;
+            quantidadeLabel.Text = "quantidade:";
+            // 
+            // precoLabel
+            // 
+            precoLabel.AutoSize = true;
+            precoLabel.Location = new System.Drawing.Point(28, 158);
+            precoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            precoLabel.Name = "precoLabel";
+            precoLabel.Size = new System.Drawing.Size(53, 20);
+            precoLabel.TabIndex = 7;
+            precoLabel.Text = "preco:";
+            // 
+            // forncedorLabel
+            // 
+            forncedorLabel.AutoSize = true;
+            forncedorLabel.Location = new System.Drawing.Point(28, 198);
+            forncedorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            forncedorLabel.Name = "forncedorLabel";
+            forncedorLabel.Size = new System.Drawing.Size(81, 20);
+            forncedorLabel.TabIndex = 9;
+            forncedorLabel.Text = "forncedor:";
             // 
             // petshopDataSet
             // 
@@ -108,6 +158,7 @@ namespace petshop
             this.produtosBindingNavigator.BindingSource = this.produtosBindingSource;
             this.produtosBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.produtosBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.produtosBindingNavigator.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.produtosBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -127,10 +178,36 @@ namespace petshop
             this.produtosBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.produtosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.produtosBindingNavigator.Name = "produtosBindingNavigator";
+            this.produtosBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.produtosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.produtosBindingNavigator.Size = new System.Drawing.Size(759, 25);
+            this.produtosBindingNavigator.Size = new System.Drawing.Size(1138, 33);
             this.produtosBindingNavigator.TabIndex = 0;
             this.produtosBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(34, 28);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(57, 28);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(34, 28);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -138,7 +215,7 @@ namespace petshop
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -147,34 +224,28 @@ namespace petshop
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 33);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(73, 31);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 33);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -182,7 +253,7 @@ namespace petshop
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -191,124 +262,71 @@ namespace petshop
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 33);
             // 
             // produtosBindingNavigatorSaveItem
             // 
             this.produtosBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.produtosBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("produtosBindingNavigatorSaveItem.Image")));
             this.produtosBindingNavigatorSaveItem.Name = "produtosBindingNavigatorSaveItem";
-            this.produtosBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.produtosBindingNavigatorSaveItem.Size = new System.Drawing.Size(34, 28);
             this.produtosBindingNavigatorSaveItem.Text = "Save Data";
             this.produtosBindingNavigatorSaveItem.Click += new System.EventHandler(this.produtosBindingNavigatorSaveItem_Click);
-            // 
-            // codigoLabel
-            // 
-            codigoLabel.AutoSize = true;
-            codigoLabel.Location = new System.Drawing.Point(19, 25);
-            codigoLabel.Name = "codigoLabel";
-            codigoLabel.Size = new System.Drawing.Size(42, 13);
-            codigoLabel.TabIndex = 1;
-            codigoLabel.Text = "codigo:";
             // 
             // codigoTextBox
             // 
             this.codigoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtosBindingSource, "codigo", true));
-            this.codigoTextBox.Location = new System.Drawing.Point(88, 22);
+            this.codigoTextBox.Enabled = false;
+            this.codigoTextBox.Location = new System.Drawing.Point(132, 34);
+            this.codigoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.codigoTextBox.Name = "codigoTextBox";
-            this.codigoTextBox.Size = new System.Drawing.Size(636, 20);
+            this.codigoTextBox.Size = new System.Drawing.Size(952, 26);
             this.codigoTextBox.TabIndex = 2;
-            // 
-            // descricaoLabel
-            // 
-            descricaoLabel.AutoSize = true;
-            descricaoLabel.Location = new System.Drawing.Point(19, 51);
-            descricaoLabel.Name = "descricaoLabel";
-            descricaoLabel.Size = new System.Drawing.Size(56, 13);
-            descricaoLabel.TabIndex = 3;
-            descricaoLabel.Text = "descricao:";
             // 
             // descricaoTextBox
             // 
             this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtosBindingSource, "descricao", true));
-            this.descricaoTextBox.Location = new System.Drawing.Point(88, 48);
+            this.descricaoTextBox.Enabled = false;
+            this.descricaoTextBox.Location = new System.Drawing.Point(132, 74);
+            this.descricaoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.descricaoTextBox.Name = "descricaoTextBox";
-            this.descricaoTextBox.Size = new System.Drawing.Size(636, 20);
+            this.descricaoTextBox.Size = new System.Drawing.Size(952, 26);
             this.descricaoTextBox.TabIndex = 4;
-            // 
-            // quantidadeLabel
-            // 
-            quantidadeLabel.AutoSize = true;
-            quantidadeLabel.Location = new System.Drawing.Point(19, 77);
-            quantidadeLabel.Name = "quantidadeLabel";
-            quantidadeLabel.Size = new System.Drawing.Size(63, 13);
-            quantidadeLabel.TabIndex = 5;
-            quantidadeLabel.Text = "quantidade:";
             // 
             // quantidadeTextBox
             // 
             this.quantidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtosBindingSource, "quantidade", true));
-            this.quantidadeTextBox.Location = new System.Drawing.Point(88, 74);
+            this.quantidadeTextBox.Enabled = false;
+            this.quantidadeTextBox.Location = new System.Drawing.Point(132, 114);
+            this.quantidadeTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.quantidadeTextBox.Name = "quantidadeTextBox";
-            this.quantidadeTextBox.Size = new System.Drawing.Size(636, 20);
+            this.quantidadeTextBox.Size = new System.Drawing.Size(952, 26);
             this.quantidadeTextBox.TabIndex = 6;
-            // 
-            // precoLabel
-            // 
-            precoLabel.AutoSize = true;
-            precoLabel.Location = new System.Drawing.Point(19, 103);
-            precoLabel.Name = "precoLabel";
-            precoLabel.Size = new System.Drawing.Size(37, 13);
-            precoLabel.TabIndex = 7;
-            precoLabel.Text = "preco:";
             // 
             // precoTextBox
             // 
             this.precoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtosBindingSource, "preco", true));
-            this.precoTextBox.Location = new System.Drawing.Point(88, 100);
+            this.precoTextBox.Enabled = false;
+            this.precoTextBox.Location = new System.Drawing.Point(132, 154);
+            this.precoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.precoTextBox.Name = "precoTextBox";
-            this.precoTextBox.Size = new System.Drawing.Size(636, 20);
+            this.precoTextBox.Size = new System.Drawing.Size(952, 26);
             this.precoTextBox.TabIndex = 8;
-            // 
-            // forncedorLabel
-            // 
-            forncedorLabel.AutoSize = true;
-            forncedorLabel.Location = new System.Drawing.Point(19, 129);
-            forncedorLabel.Name = "forncedorLabel";
-            forncedorLabel.Size = new System.Drawing.Size(55, 13);
-            forncedorLabel.TabIndex = 9;
-            forncedorLabel.Text = "forncedor:";
             // 
             // forncedorTextBox
             // 
             this.forncedorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtosBindingSource, "forncedor", true));
-            this.forncedorTextBox.Location = new System.Drawing.Point(88, 126);
+            this.forncedorTextBox.Enabled = false;
+            this.forncedorTextBox.Location = new System.Drawing.Point(132, 194);
+            this.forncedorTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.forncedorTextBox.Name = "forncedorTextBox";
-            this.forncedorTextBox.Size = new System.Drawing.Size(636, 20);
+            this.forncedorTextBox.Size = new System.Drawing.Size(952, 26);
             this.forncedorTextBox.TabIndex = 10;
             // 
             // produtosDataGridView
@@ -322,46 +340,60 @@ namespace petshop
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.produtosDataGridView.DataSource = this.produtosBindingSource;
-            this.produtosDataGridView.Location = new System.Drawing.Point(22, 209);
+            this.produtosDataGridView.Location = new System.Drawing.Point(33, 322);
+            this.produtosDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.produtosDataGridView.Name = "produtosDataGridView";
-            this.produtosDataGridView.Size = new System.Drawing.Size(702, 220);
+            this.produtosDataGridView.RowHeadersWidth = 62;
+            this.produtosDataGridView.Size = new System.Drawing.Size(1053, 338);
             this.produtosDataGridView.TabIndex = 11;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "codigo";
             this.dataGridViewTextBoxColumn1.HeaderText = "codigo";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 150;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "descricao";
             this.dataGridViewTextBoxColumn2.HeaderText = "descricao";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 150;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "quantidade";
             this.dataGridViewTextBoxColumn3.HeaderText = "quantidade";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 150;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "preco";
             this.dataGridViewTextBoxColumn4.HeaderText = "preco";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 150;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "forncedor";
             this.dataGridViewTextBoxColumn5.HeaderText = "forncedor";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 150;
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(388, 170);
+            this.BtnCancelar.Enabled = false;
+            this.BtnCancelar.Location = new System.Drawing.Point(582, 262);
+            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(142, 23);
+            this.BtnCancelar.Size = new System.Drawing.Size(213, 35);
             this.BtnCancelar.TabIndex = 18;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
@@ -369,9 +401,10 @@ namespace petshop
             // 
             // BtnExcluir
             // 
-            this.BtnExcluir.Location = new System.Drawing.Point(589, 170);
+            this.BtnExcluir.Location = new System.Drawing.Point(884, 262);
+            this.BtnExcluir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnExcluir.Name = "BtnExcluir";
-            this.BtnExcluir.Size = new System.Drawing.Size(135, 23);
+            this.BtnExcluir.Size = new System.Drawing.Size(202, 35);
             this.BtnExcluir.TabIndex = 17;
             this.BtnExcluir.Text = "Excluir";
             this.BtnExcluir.UseVisualStyleBackColor = true;
@@ -379,9 +412,11 @@ namespace petshop
             // 
             // BtnSalvar
             // 
-            this.BtnSalvar.Location = new System.Drawing.Point(207, 170);
+            this.BtnSalvar.Enabled = false;
+            this.BtnSalvar.Location = new System.Drawing.Point(310, 262);
+            this.BtnSalvar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Size = new System.Drawing.Size(127, 23);
+            this.BtnSalvar.Size = new System.Drawing.Size(190, 35);
             this.BtnSalvar.TabIndex = 16;
             this.BtnSalvar.Text = "Salvar";
             this.BtnSalvar.UseVisualStyleBackColor = true;
@@ -389,9 +424,10 @@ namespace petshop
             // 
             // BtnNovo
             // 
-            this.BtnNovo.Location = new System.Drawing.Point(22, 170);
+            this.BtnNovo.Location = new System.Drawing.Point(33, 262);
+            this.BtnNovo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnNovo.Name = "BtnNovo";
-            this.BtnNovo.Size = new System.Drawing.Size(134, 23);
+            this.BtnNovo.Size = new System.Drawing.Size(201, 35);
             this.BtnNovo.TabIndex = 15;
             this.BtnNovo.Text = "Novo";
             this.BtnNovo.UseVisualStyleBackColor = true;
@@ -399,9 +435,9 @@ namespace petshop
             // 
             // cad_produtos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 449);
+            this.ClientSize = new System.Drawing.Size(1138, 691);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnExcluir);
             this.Controls.Add(this.BtnSalvar);
@@ -418,7 +454,6 @@ namespace petshop
             this.Controls.Add(forncedorLabel);
             this.Controls.Add(this.forncedorTextBox);
             this.Controls.Add(this.produtosBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "cad_produtos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Produtos";

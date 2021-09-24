@@ -17,6 +17,32 @@ namespace petshop
             InitializeComponent();
         }
 
+        void habilitar()
+        {
+            codigoTextBox.Enabled = true;
+            nomeTextBox.Enabled = true;
+            foneMaskedTextBox.Enabled = true;
+            emailTextBox.Enabled = true;
+            cpfMaskedTextBox.Enabled = true;
+            BtnNovo.Enabled = false;
+            BtnSalvar.Enabled = true;
+            BtnCancelar.Enabled = true;
+            BtnExcluir.Enabled = false;
+        }
+
+        void desabilitar()
+        {
+            codigoTextBox.Enabled = false;
+            nomeTextBox.Enabled = false;
+            foneMaskedTextBox.Enabled = false;
+            emailTextBox.Enabled = false;
+            cpfMaskedTextBox.Enabled = false;
+            BtnNovo.Enabled = true;
+            BtnSalvar.Enabled = false;
+            BtnCancelar.Enabled = false;
+            BtnExcluir.Enabled = true;
+        }
+
         private void clientesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -34,6 +60,7 @@ namespace petshop
 
         private void BtnNovo_Click(object sender, EventArgs e)
         {
+            habilitar();
             clientesBindingSource.AddNew();
         }
 
@@ -42,11 +69,13 @@ namespace petshop
             clientesBindingSource.EndEdit();
             clientesTableAdapter.Update(petshopDataSet.clientes);
             clientesTableAdapter.Fill(petshopDataSet.clientes);
+            desabilitar();
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             clientesBindingSource.CancelEdit();
+            desabilitar();
         }
 
         private void BtnExcluir_Click(object sender, EventArgs e)
